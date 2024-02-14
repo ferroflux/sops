@@ -1,0 +1,60 @@
+<!doctype html> 
+<html> 
+<head> 
+<title>ITZONE JS SOP - 6</title> 
+<script type="text/javascript"> 
+function calculate() 
+{ 
+ var phy, chem, math, bio, eng, infotech, average, total, grade; 
+ phy = parseInt(form1.physics.value); 
+ chem = parseInt(form1.chem.value); 
+ math = parseInt(form1.maths.value); 
+ bio = parseInt(form1.biology.value); 
+ eng = parseInt(form1.eng.value); 
+ infotech = parseInt(form1.info.value); 
+ total = phy + chem + math + bio + eng + infotech; 
+ average = total / 6; 
+Range Grade
+35 to 60 E
+61 to 70 D
+71 to 80 C
+81 to 90 B
+91 to 100 A
+ 
+ form1.avg.value = average; 
+ 
+ if (average >= 35 && average<=60) 
+ { grade = "F"; } 
+ 
+ if (average >= 61 && average <= 70) 
+ { grade = "D"; } 
+ 
+ if (average >= 71 && average <= 80) 
+ { grade = "C"; } 
+ 
+ if (average >= 81 && average <= 90) 
+ { grade = "B"; } 
+ if (average >= 91) 
+ { grade = "A"; } 
+form1.grade.value = grade; 
+} 
+</script> 
+</head> 
+<body bgcolor="aqua"> 
+<form name="form1"> 
+<h3>Enter Marks of following Subjects : </h3> 
+<hr color="red"> 
+Physics : <input type=text name="physics"><br><br> 
+Chemistry : <input type=text name="chem"><br><br> 
+Mathematics : <input type=text name="maths"><br><br> 
+Biology : <input type=text name="biology"><br><br> 
+English : <input type=text name="eng"><br><br> 
+Information Technology : <input type=text name="info"><br><br> 
+<hr color="red"> 
+Average Marks : <input type=text name="avg"> <br><br> 
+Grade : <input type=text name="grade"> <br> 
+<hr color="red"> 
+<input type=button value="Calculate" onclick="calculate()"> 
+</form> 
+</body> 
+</html>

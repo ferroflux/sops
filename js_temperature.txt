@@ -1,0 +1,37 @@
+<!doctype html> 
+<html> 
+<head> 
+<title>ITZONE JS SOP-5</title> 
+<script type="text/javascript"> 
+function convert() 
+{ 
+var C, F, C1, F1; 
+C = form1.celcius.value; 
+F = form1.fehren.value; 
+ 
+F1 = C * 9 / 5 + 32; 
+Nitin Raulwar : NAGPUR DIVISION XII – IT (97) Practical Solution 
+C1 = 5 / 9 * (F - 32); 
+form1.Cel1.value= C; 
+form1.Feh1.value = F1; 
+form1.Feh2.value = F 
+form1.Cel2.value= C1; 
+} 
+</script> 
+</head> 
+<body bgcolor=aqua> 
+<form name="form1"> 
+<h2> Conversion of Temp from Celcius To Fehrenhite and vice versa</h2> 
+Enter temperature in Celcius : <input type=text size=10 name="celcius"><br> 
+Enter temperature in Fahrenheit : <input type=text size=10 name="fehren"> 
+<br> <br> 
+<input type=button value="Convert" onclick="convert()"> 
+<hr color="red"> 
+Output1 : <input type=text name="Cel1" size=10> 
+Celcius = <input type=text name="Feh1" size=10> Fehrenhite <br> 
+Output2 : <input type=text name="Feh2" size=10> 
+Fahrenheit = <input type=text name="Cel2" size=10> Celcius <br> 
+<hr color="red"> 
+</form> 
+</body> 
+</html>
