@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>ITZONE PHP SOP - 4</title>
+</head>
+<body>
+<h1>Marks array </h1>
+<?php
+$marks = array("Eng"=>75, "Hindi"=>50, "Marathi"=>40, "Maths"=>90,
+"IT"=>99);
+$total = 0; $percent = 0;
+echo "Subject and marks are as follows <hr>"; 
+Nitin Raulwar : NAGPUR DIVISION XII – IT (97) Practical Solution
+foreach($marks as $key=>$value)
+{
+ echo $key." = ".$value."<br>";
+ $total = $total + $value;
+}
+echo "<hr>";
+echo "total marks = ".$total."<br>";
+$percent = $total / 500 * 100;
+echo "percentage of marks = ".$percent." %";
+?>
+<br>
+</body>
+</html>

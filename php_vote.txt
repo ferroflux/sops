@@ -1,0 +1,30 @@
+<html>
+<head>
+<title> PHP SOP - 1</title>
+</head>
+<body>
+<h1>Person is Eligible or not for voting</h1>
+<form method="post" action="">
+Enter the age of voter : <input type="text" name="age"><br>
+<input type="submit" name="submit" value="Check eligible or not">
+</form>
+</body>
+</html>
+<?php
+if(isset($_POST['submit']))
+{
+ checkvalidvoter();
+}
+function checkvalidvoter()
+{
+ $age=$_POST['age'];
+ if($age >=18)
+ {
+ echo "Voter is eligible";
+ }
+ else
+ {
+ echo "Voter is not eligible";
+ }
+}
+?>
