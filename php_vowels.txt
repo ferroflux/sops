@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>ITZONE PHP SOP - 1</title>
+<title>PHP SOP - 1</title>
 </head>
 <body>
 <h1>Count the number of vowels in a string</h1>
@@ -21,7 +21,6 @@ if(isset($_POST['submit']))
  for($j=0; $j <= $Length - 1 ; $j=$j+1)
  {
  $char = strtolower($string[$j]); 
-Nitin Raulwar : NAGPUR DIVISION XII – IT (97) Practical Solution
  if(in_array($char,$arr))
  {
  $count = $count + 1;
