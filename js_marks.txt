@@ -1,18 +1,18 @@
 <!doctype html> 
 <html> 
 <head> 
-<title>ITZONE JS SOP - 6</title> 
+<title>JS SOP - 6</title> 
 <script type="text/javascript"> 
 function calculate() 
 { 
- var phy, chem, math, bio, eng, infotech, average, total, grade; 
+ var phy, chem, math, bio, eng, IT, average, total, grade; 
  phy = parseInt(form1.physics.value); 
  chem = parseInt(form1.chem.value); 
  math = parseInt(form1.maths.value); 
  bio = parseInt(form1.biology.value); 
  eng = parseInt(form1.eng.value); 
- infotech = parseInt(form1.info.value); 
- total = phy + chem + math + bio + eng + infotech; 
+ IT = parseInt(form1.info.value); 
+ total = phy + chem + math + bio + eng + IT; 
  average = total / 6; 
 Range Grade
 35 to 60 E
